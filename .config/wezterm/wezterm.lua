@@ -3,7 +3,7 @@ local config = wezterm.config_builder()
 
 -- Font settings
 config.font_size = 16
-config.line_height = 1.4
+config.line_height = 1.1
 
 -- Colors
 config.colors = {
@@ -21,3 +21,8 @@ config.window_padding = {
     top = 0,
     bottom = 0,
 }
+
+-- Default terminal
+config.default_prog = { "powershell.exe", "-NoLogo" }
+
+return config
