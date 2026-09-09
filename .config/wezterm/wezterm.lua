@@ -14,11 +14,12 @@ config.colors = {
 
 -- Appearance
 config.cursor_blink_rate = 0
+config.enable_scroll_bar = true
 config.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
 config.hide_tab_bar_if_only_one_tab = false
 config.window_padding = {
     left = 5,
-    right = 5,
+    right = 15,
     top = 1,
     bottom = 2,
 }
