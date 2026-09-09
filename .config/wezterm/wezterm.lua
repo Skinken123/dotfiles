@@ -26,7 +26,7 @@ config.window_padding = {
 -- Default terminal
 config.default_prog = { "powershell.exe", "-NoLogo" }
 
--- Custom tab names
+-- Tab appearance
 require("tabs").apply(config)
 
 return config
