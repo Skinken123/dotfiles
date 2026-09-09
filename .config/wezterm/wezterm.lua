@@ -4,6 +4,7 @@ local config = wezterm.config_builder()
 -- Font settings
 config.font_size = 15
 config.line_height = 1.1
+config.font = wezterm.font("Cascadia Mono")
 
 -- Colors
 config.colors = {
@@ -26,6 +27,6 @@ config.window_padding = {
 config.default_prog = { "powershell.exe", "-NoLogo" }
 
 -- Custom tab names
-require("tab-names").setup()
+require("tabs").apply(config)
 
 return config
