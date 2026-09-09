@@ -14,7 +14,7 @@ config.colors = {
 
 -- Appearance
 config.cursor_blink_rate = 0
-config.window_decorations = 'RESIZE'
+config.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
 config.hide_tab_bar_if_only_one_tab = false
 config.window_padding = {
     left = 5,
@@ -28,5 +28,8 @@ config.default_prog = { "powershell.exe", "-NoLogo" }
 
 -- Tab appearance
 require("tabs").apply(config)
+
+-- Keybindings
+require("keybindings").apply(config)
 
 return config
